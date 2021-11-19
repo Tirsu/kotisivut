@@ -24,9 +24,19 @@
         <p><img src="kuvat/sekoilu.jpg" alt="Mönkään meni"></p>
       </article>
 
+
+
+    <article class="pikkuboksi">
+      <p>
+        <?php  $file='counter.txt';  $read=file_get_contents($file);  $open=fopen($file,'w');  $read++;  $write=fwrite($open, $read);  fclose($open);  echo 'Kävijälaskuri: '.$read;?>
+      </p>
+    </article>
+
+
+
       <article class="pikkuboksi">
         <p>
-          Sivun kehitys vielä vaiheessa
+        Sivun kehitys vielä vaiheessa
         </p>
       </article>
 
