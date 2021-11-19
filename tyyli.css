@@ -2,10 +2,15 @@ body {
   background-color: pink;
 }
 
+img {
+  border-radius: 20px;
+}
+
 .tausta {
   margin: auto;
-  width: 50%;
+  width: 800px;
   padding: 5px;
+  margin-top: 60px;
   background-color: lightgray;
 }
 
@@ -17,7 +22,7 @@ body {
 
 .pikkuboksi {
   background: white;
-  text-align: left;
+  text-align: center;
 }
 
 .pikkuboksi > h2, p {
