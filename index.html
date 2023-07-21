@@ -96,7 +96,7 @@
     }
 
     // Update the counter display on the website
-    document.getElementById('visitorCounter').textContent = 'Visitors: ' + visitorCount;
+    document.getElementById('visitorCounter').textContent = 'Sivulataukset: ' + visitorCount;
 
     // Save the updated count to local storage
     localStorage.setItem('visitorCount', visitorCount.toString());
@@ -123,8 +123,8 @@
     <p>Eikös me sovittu että tämä sekoilu loppuu jo?</p>
   <button class="btn" onclick="rickRoll()">Paina tästä</button>
   </section>
-
-  <div class="visitor-counter"><div id="visitorCounter" class="visitor-counter">Visitors: Loading...</div></div>
+<br>
+  <div class="visitor-counter"><div id="visitorCounter" class="visitor-counter">Sivulataukset: Ladataan...</div></div>
 
   <footer>
     &copy; Sivun kehitys vielä vaiheessa
