@@ -70,6 +70,33 @@
       width: 100%;
     }
   </style>
+
+<script>
+  // Function to increment and display the visitor count
+  function updateVisitorCount() {
+    // You can store the visitor count in a cookie or local storage to persist it between sessions
+    let visitorCount = localStorage.getItem('visitorCount');
+
+    // If the visitor count is not stored or is not a valid number, start from 1
+    if (!visitorCount || isNaN(parseInt(visitorCount))) {
+      visitorCount = 1;
+    } else {
+      // Otherwise, increment the count by 1
+      visitorCount = parseInt(visitorCount) + 1;
+    }
+
+    // Update the counter display on the website
+    document.getElementById('visitorCounter').textContent = 'Visitors: ' + visitorCount;
+
+    // Save the updated count to local storage
+    localStorage.setItem('visitorCount', visitorCount.toString());
+  }
+
+  // Call the function when the page loads
+  window.onload = updateVisitorCount;
+</script>
+
+  
 </head>
 <body>
   <header>
@@ -88,7 +115,7 @@
     <button class="btn">Join Now</button>
   </section>
 
-  <div class="visitor-counter">Visitors: 12345</div>
+  <div class="visitor-counter"><div id="visitorCounter" class="visitor-counter">Visitors: Loading...</div></div>
 
   <footer>
     &copy; Sivun kehitys vielä vaiheessa
