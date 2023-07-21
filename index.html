@@ -72,6 +72,16 @@
   </style>
 
 <script>
+  // Function to perform the Rick Roll redirection
+  function rickRoll() {
+    // Replace the URL below with the Rick Astley's "Never Gonna Give You Up" video link
+    const rickRollUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+    window.location.href = rickRollUrl;
+  }
+</script>
+
+  
+<script>
   // Function to increment and display the visitor count
   function updateVisitorCount() {
     // You can store the visitor count in a cookie or local storage to persist it between sessions
@@ -111,8 +121,8 @@
   <section>
     <h2>About Me</h2>
     <p>Eikös me sovittu että tämä sekoilu loppuu jo?</p>
-    <p>Click the button below to join the nostalgia trip!</p>
-    <button class="btn">Join Now</button>
+    <p>Paina tästä</p>
+  <button class="btn" onclick="rickRoll()">Paina tästä</button>
   </section>
 
   <div class="visitor-counter"><div id="visitorCounter" class="visitor-counter">Visitors: Loading...</div></div>
