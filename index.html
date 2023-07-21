@@ -1,49 +1,97 @@
 <!DOCTYPE html>
-<html lang="favicon" dir="ltr">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My 1990s Website</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: "Arial", sans-serif;
+      text-align: center;
+    }
 
-  <head>
-    <meta charset="utf-8">
-    <title>Osmon kotisivut</title>
-    <link rel="stylesheet" href="tyyli.css">
-  </head>
-  <body onload="incrementCount(10)">
+    h1 {
+      font-size: 40px;
+      color: #f0f;
+    }
 
-    <article class="tausta">
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
 
-      <h1 class="vilkku">Tervetuloa Osmon kotisivuille!</h1>
+    /* Header styles */
+    header {
+      background-color: #00f;
+      padding: 10px;
+    }
 
-      <article class="pikkuboksi">
-        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Paina tästä</a></p>
-      </article>
+    /* Navigation styles */
+    nav {
+      display: inline-block;
+    }
 
-      <article class="pikkuboksi">
-        <p><img src="kuvat/saatana2.jpg" alt="Voi saatana"></p>
-      </article>
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
 
-      <article class="pikkuboksi">
-        <p><img src="kuvat/sekoilu.jpg" alt="Mönkään meni"></p>
-      </article>
+    /* Retro-style button */
+    .btn {
+      background-color: #ff0;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
 
+    /* Animated background */
+    section {
+      background-image: url('animated-background.gif');
+      background-repeat: repeat;
+    }
 
+    /* Visitor counter */
+    .visitor-counter {
+      font-size: 24px;
+      color: #0f0;
+    }
 
-    <article class="pikkuboksi">
-      <p>
-        <div class="main_container" id="id_main_container">
-          <div class="container_inner" id="display_div_id"> </div>
-        </div>
-      </p>
-    </article>
+    /* Footer styles */
+    footer {
+      background-color: #f00;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My '90s Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
+  <section>
+    <h2>About Me</h2>
+    <p>Hello there! I'm a '90s enthusiast creating this awesome website to take you back to the good old days of the internet.</p>
+    <p>Click the button below to join the nostalgia trip!</p>
+    <button class="btn">Join Now</button>
+  </section>
 
+  <div class="visitor-counter">Visitors: 12345</div>
 
-      <article class="pikkuboksi">
-        <p>
-        Sivun kehitys vielä vaiheessa, vai onko? 
-        </p>
-      </article>
-
-    </article>
-
-  </body>
+  <footer>
+    &copy; 2023 My '90s Website. All rights reserved.
+  </footer>
+</body>
 </html>
-
